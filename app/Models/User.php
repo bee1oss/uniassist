@@ -51,6 +51,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(RefreshToken::class);
     }
-
     
+    public function analysisReports()
+    {
+        return $this->hasMany(AnalysisReport::class);
+    }
 }
